@@ -130,6 +130,7 @@ class Util {
 	 * @param animationName {String}
 	 */
 	static afterAnimation(target, animationName) {
+		//console.log(target);
 		target = Array.isArray(target)? target : [target];
 		var animating = target.filter(candy => getComputedStyle(candy).animationName.includes(animationName));
 

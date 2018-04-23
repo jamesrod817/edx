@@ -276,15 +276,18 @@ class Board extends EventTarget {
 			toRow: candy2.row,
 			toCol: candy2.col,
 			fromRow: candy1.row,
-			fromCol: candy1.col
+			fromCol: candy1.col,
+			lmao: false
 		};
 		var details2 = {
 			candy: candy2,
 			toRow: candy1.row,
 			toCol: candy1.col,
 			fromRow: candy2.row,
-			fromCol: candy2.col
+			fromCol: candy2.col,
+			lmao: false
 		};
+
 		candy1.row = details1.toRow;
 		candy1.col = details1.toCol;
 		this.square[details1.toRow][details1.toCol] = candy1;

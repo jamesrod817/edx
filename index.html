@@ -29,20 +29,24 @@ PS2 - CandyCrush UI
 
 </head>
 
+
 <body>
+<div class="flex-page">
+  <div class="column1">
+    <div class="flex-column1">
+      <div><h1><font size="10px" color="#4169E1">Candy<br/>Crush!</font></h1></div>
+      <div class="buttonscore" id ="score"><span class="points" id="points">0</span> <br/>points</button></div>
 
-<header>
-  Column 1
-</header>
+      <div><button class="buttongame" id ="new-game" onclick="rules.prepareNewGame()">New Game</button></div>
+    </div>
+  </div>
 
-<main>
-  Column 2
-</main>
+  <div  class="column2">
+  	<div class="board" id = "container">
+  	</div>
+  </div>
 
-<div id="controls">
-  Column 3
 </div>
-
 </body>
 
 </html>

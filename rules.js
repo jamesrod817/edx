@@ -25,7 +25,7 @@ class Rules {
 	prepareNewGame() {
 		board.clear();
 		this.scoring = false;
-
+		
 		while (true) {
 			this.populateBoard();
 			var crushable = this.getCandyCrushes();
